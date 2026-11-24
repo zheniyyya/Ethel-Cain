@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
 const slides = ['/images/hero-1.jpg', '/images/hero-2.jpg', '/images/hero-3.jpg'];
@@ -14,24 +15,24 @@ function Header() {
     <header className="header">
       <nav className="menu">
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><NavLink to="/" end>Home</NavLink></li>
           <li>
-            <a href="#">About Ethel Cain</a>
+            <NavLink to="/about" end>About Ethel Cain</NavLink>
             <ul>
-              <li><a href="#">Biography</a></li>
-              <li><a href="#">Discography</a></li>
+              <li><NavLink to="/about/biography">Biography</NavLink></li>
+              <li><NavLink to="/about/discography">Discography</NavLink></li>
             </ul>
           </li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Tour</a></li>
+          <li><NavLink to="/news">News</NavLink></li>
+          <li><NavLink to="/tour">Tour</NavLink></li>
           <li>
-            <a href="#">Shop</a>
+            <NavLink to="/shop" end>Shop</NavLink>
             <ul>
-              <li><a href="#">Albums</a></li>
-              <li><a href="#">Merch</a></li>
+              <li><NavLink to="/shop/albums">Albums</NavLink></li>
+              <li><NavLink to="/shop/merch">Merch</NavLink></li>
             </ul>
           </li>
-          <li><a href="#">Contacts</a></li>
+          <li><NavLink to="/contacts">Contacts</NavLink></li>
         </ul>
       </nav>
 
