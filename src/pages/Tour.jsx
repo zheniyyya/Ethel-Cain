@@ -16,14 +16,17 @@ function Tour() {
   const [page, setPage] = useState(1);
   const [country, setCountry] = useState('all');
   const [sort, setSort] = useState('date-asc');
+  const [query, setQuery] = useState('');
   const sectionRef = useRef(null);
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>{error}</p>;
 
   const countries = [...new Set(data.map((show) => show.country))].sort();
+  const search = query.trim().toLowerCase();
   const shows = data
     .filter((show) => country === 'all' || show.country === country)
+    .filter((show) => `${show.city} ${show.country} ${show.venue}`.toLowerCase().includes(search))
     .sort(sorters[sort]);
   const totalPages = Math.ceil(shows.length / PAGE_SIZE);
   const visibleShows = shows.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
@@ -43,11 +46,25 @@ function Tour() {
     setPage(1);
   };
 
+  const changeQuery = (event) => {
+    setQuery(event.target.value);
+    setPage(1);
+  };
+
   return (
     <section className="tour" ref={sectionRef}>
       <h1>Tour</h1>
 
       <div className="tour__controls">
+        <label className="tour__search">
+          Search
+          <input
+            type="search"
+            value={query}
+            onChange={changeQuery}
+            placeholder="City, country or venue"
+          />
+        </label>
         <label>
           Country
           <select value={country} onChange={changeCountry}>
