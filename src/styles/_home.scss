@@ -1,0 +1,107 @@
+@use 'variables' as *;
+
+.home {
+  max-width: 72rem;
+  margin: 0 auto;
+
+  a:not(.button) {
+    color: $text;
+    text-decoration: none;
+
+    &:hover {
+      color: $rust;
+    }
+  }
+
+  &__intro {
+    padding: 1rem 0 2.5rem;
+
+    h1 {
+      margin: 0 0 1rem;
+      font-family: 'Texturina', Georgia, serif;
+      font-size: 3rem;
+      line-height: 1.2;
+    }
+  }
+
+  &__lead {
+    max-width: 44rem;
+    margin: 0 0 1.75rem;
+    padding-left: 1.25rem;
+    border-left: 2px solid $rust;
+    font-size: 1.25rem;
+    line-height: 1.7;
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+  }
+
+  &__heading {
+    margin: 0 0 1.25rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid $line;
+    color: $rust;
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  &__release {
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+
+    img {
+      width: 10rem;
+      aspect-ratio: 1;
+      object-fit: cover;
+      background: $line;
+    }
+
+    h3 {
+      margin: 0 0 0.25rem;
+      font-family: 'Texturina', Georgia, serif;
+      font-size: 1.5rem;
+    }
+
+    p {
+      margin: 0;
+      color: $rust;
+    }
+  }
+
+  &__news,
+  &__shows {
+    margin: 0 0 1.5rem;
+    padding: 0;
+    list-style: none;
+
+    li {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid $line;
+    }
+
+    time {
+      color: $rust;
+      font-size: 0.875rem;
+    }
+  }
+
+  &__news a,
+  &__shows span {
+    font-family: 'Texturina', Georgia, serif;
+    font-size: 1.2rem;
+  }
+}

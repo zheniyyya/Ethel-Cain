@@ -1,0 +1,31 @@
+@use 'variables' as *;
+
+.button {
+  display: inline-block;
+  padding: 0.85rem 1.75rem;
+  border: 2px solid $rust;
+  background: $rust;
+  color: $bg;
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition:
+    background 0.2s,
+    color 0.2s;
+
+  &:hover {
+    background: transparent;
+    color: $rust;
+  }
+
+  &--outline {
+    background: transparent;
+    color: $rust;
+
+    &:hover {
+      background: $rust;
+      color: $bg;
+    }
+  }
+}
