@@ -1,30 +1,44 @@
 [
   {
     "id": 1,
+    "title": "Carpet Bed",
+    "year": 2019,
+    "type": "EP",
+    "cover": "/images/albums/carpet-bed.jpg"
+  },
+  {
+    "id": 2,
     "title": "Golden Age",
-    "year": 2018,
+    "year": 2019,
     "type": "EP",
     "cover": "/images/albums/golden-age.jpg"
   },
   {
-    "id": 2,
+    "id": 3,
     "title": "Inbred",
     "year": 2021,
     "type": "EP",
     "cover": "/images/albums/inbred.jpg"
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "Preacher's Daughter",
     "year": 2022,
     "type": "Album",
     "cover": "/images/albums/preachers-daughter.webp"
   },
   {
-    "id": 4,
+    "id": 5,
     "title": "Perverts",
     "year": 2025,
-    "type": "Album",
+    "type": "EP",
     "cover": "/images/albums/perverts.png"
+  },
+  {
+    "id": 6,
+    "title": "Willoughby Tucker, I'll Always Love You",
+    "year": 2025,
+    "type": "Album",
+    "cover": "/images/albums/willoughby-tucker.jpg"
   }
 ]

@@ -1,0 +1,39 @@
+@use 'variables' as *;
+
+.article {
+  max-width: 72rem;
+  margin: 0 auto;
+  font-size: 1.0625rem;
+  line-height: 1.8;
+
+  h1,
+  h2 {
+    font-family: 'Texturina', Georgia, serif;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  h1 {
+    margin: 0 0 1.5rem;
+    font-size: 2.25rem;
+  }
+
+  h2 {
+    margin: 2.5rem 0 0.75rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid $line;
+    color: $rust;
+    font-size: 1.5rem;
+  }
+
+  p {
+    margin: 0 0 1.25rem;
+  }
+
+  &__lead {
+    font-size: 1.25rem;
+    line-height: 1.7;
+    padding-left: 1.25rem;
+    border-left: 2px solid $rust;
+  }
+}
