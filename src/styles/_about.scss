@@ -1,0 +1,93 @@
+@use 'variables' as *;
+
+.about {
+  max-width: 72rem;
+  margin: 0 auto;
+
+  &__lead {
+    max-width: 48rem;
+    margin: 0 0 2rem;
+    padding-left: 1.25rem;
+    border-left: 2px solid $rust;
+    font-size: 1.25rem;
+    line-height: 1.7;
+  }
+
+  &__facts,
+  &__links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid $line;
+    border-bottom: 1px solid $line;
+    text-align: center;
+
+    li {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__fact-value {
+    color: $rust;
+    font-family: 'Texturina', Georgia, serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  &__fact-label {
+    font-size: 0.875rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  &__links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 1.5rem;
+  }
+
+  &__card {
+    display: block;
+    height: 100%;
+    border: 1px solid $line;
+    color: $text;
+    text-decoration: none;
+    transition: border-color 0.2s;
+
+    &:hover {
+      border-color: $rust;
+    }
+
+    img {
+      width: 100%;
+      aspect-ratio: 16 / 7;
+      object-fit: cover;
+      background: $line;
+    }
+
+    h2 {
+      margin: 0 0 0.5rem;
+      font-family: 'Texturina', Georgia, serif;
+      font-size: 1.5rem;
+    }
+
+    p {
+      margin: 0;
+      line-height: 1.6;
+    }
+  }
+
+  &__card-body {
+    padding: 1.25rem;
+  }
+}
