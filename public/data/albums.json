@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Golden Age",
+    "year": 2018,
+    "type": "EP",
+    "cover": "/images/albums/golden-age.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Inbred",
+    "year": 2021,
+    "type": "EP",
+    "cover": "/images/albums/inbred.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Preacher's Daughter",
+    "year": 2022,
+    "type": "Album",
+    "cover": "/images/albums/preachers-daughter.webp"
+  },
+  {
+    "id": 4,
+    "title": "Perverts",
+    "year": 2025,
+    "type": "Album",
+    "cover": "/images/albums/perverts.png"
+  }
+]

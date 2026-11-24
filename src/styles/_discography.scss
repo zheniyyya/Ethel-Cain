@@ -1,0 +1,30 @@
+@use 'variables' as *;
+
+.albums {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.album {
+  &__cover {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    background: $line;
+  }
+
+  &__title {
+    margin: 0.75rem 0 0.25rem;
+    font-size: 1.1rem;
+  }
+
+  &__info {
+    margin: 0;
+    color: $rust;
+    font-size: 0.875rem;
+  }
+}
