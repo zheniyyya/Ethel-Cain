@@ -3,6 +3,7 @@ import Breadcrumbs from './components/Breadcrumbs.jsx';
 import Header from './components/Header.jsx';
 import Biography from './pages/Biography.jsx';
 import Discography from './pages/Discography.jsx';
+import News from './pages/News.jsx';
 import { routes } from './routes.js';
 
 function Page({ title }) {
@@ -12,6 +13,7 @@ function Page({ title }) {
 const pages = {
   '/about/biography': <Biography />,
   '/about/discography': <Discography />,
+  '/news': <News />,
 };
 
 function App() {
