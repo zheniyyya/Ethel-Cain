@@ -9,7 +9,7 @@ function Page({ title }) {
 
 function App() {
   return (
-    <>
+    <div className="app">
       <Header />
       <main className="main">
         <Breadcrumbs />
@@ -21,7 +21,7 @@ function App() {
           </Routes>
         </div>
       </main>
-    </>
+    </div>
   );
 }
 
