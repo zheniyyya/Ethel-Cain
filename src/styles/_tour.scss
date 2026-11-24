@@ -1,0 +1,47 @@
+@use 'variables' as *;
+
+.tour {
+  max-width: 72rem;
+  margin: 0 auto;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: 12rem 1fr;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-top: 1px solid $line;
+
+    &:last-child {
+      border-bottom: 1px solid $line;
+    }
+  }
+
+  &__date {
+    color: $rust;
+    font-family: ui-monospace, Consolas, monospace;
+    font-size: 0.9rem;
+  }
+
+  &__city {
+    margin: 0;
+    font-family: 'Texturina', Georgia, serif;
+    font-size: 1.25rem;
+  }
+
+  &__venue {
+    margin: 0.25rem 0 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .tour__item {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+}

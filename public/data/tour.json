@@ -1,0 +1,19 @@
+[
+  { "id": 1, "date": "2025-08-12", "city": "Seattle", "country": "USA", "venue": "Paramount Theatre" },
+  { "id": 2, "date": "2025-08-13", "city": "Seattle", "country": "USA", "venue": "Paramount Theatre" },
+  { "id": 3, "date": "2025-09-15", "city": "Toronto", "country": "Canada", "venue": "Queen Elizabeth Theatre" },
+  { "id": 4, "date": "2025-09-16", "city": "Toronto", "country": "Canada", "venue": "Queen Elizabeth Theatre" },
+  { "id": 5, "date": "2025-09-17", "city": "Detroit", "country": "USA", "venue": "" },
+  { "id": 6, "date": "2025-09-19", "city": "St. Paul", "country": "USA", "venue": "" },
+  { "id": 7, "date": "2025-09-20", "city": "Chicago", "country": "USA", "venue": "The Salt Shed" },
+  { "id": 8, "date": "2025-10-09", "city": "London", "country": "UK", "venue": "Eventim Apollo" },
+  { "id": 9, "date": "2025-10-14", "city": "Brussels", "country": "Belgium", "venue": "Ancienne Belgique" },
+  { "id": 10, "date": "2026-02-13", "city": "Auckland", "country": "New Zealand", "venue": "" },
+  { "id": 11, "date": "2026-02-25", "city": "Brisbane", "country": "Australia", "venue": "Fortitude Music Hall" },
+  { "id": 12, "date": "2026-02-26", "city": "Brisbane", "country": "Australia", "venue": "Fortitude Music Hall" },
+  { "id": 13, "date": "2026-04-21", "city": "Denver", "country": "USA", "venue": "Red Rocks Amphitheatre" },
+  { "id": 14, "date": "2026-04-23", "city": "Omaha", "country": "USA", "venue": "The Astro Amphitheater" },
+  { "id": 15, "date": "2026-05-14", "city": "Tulsa", "country": "USA", "venue": "Cain's Ballroom" },
+  { "id": 16, "date": "2026-05-15", "city": "Tulsa", "country": "USA", "venue": "Cain's Ballroom" },
+  { "id": 17, "date": "2026-05-16", "city": "Tulsa", "country": "USA", "venue": "Cain's Ballroom" }
+]

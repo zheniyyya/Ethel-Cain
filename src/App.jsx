@@ -4,6 +4,7 @@ import Header from './components/Header.jsx';
 import Biography from './pages/Biography.jsx';
 import Discography from './pages/Discography.jsx';
 import News from './pages/News.jsx';
+import Tour from './pages/Tour.jsx';
 import { routes } from './routes.js';
 
 function Page({ title }) {
@@ -14,6 +15,7 @@ const pages = {
   '/about/biography': <Biography />,
   '/about/discography': <Discography />,
   '/news': <News />,
+  '/tour': <Tour />,
 };
 
 function App() {
