@@ -1,0 +1,39 @@
+@use 'variables' as *;
+
+.main {
+  padding: 1rem 1.5rem;
+}
+
+.breadcrumbs {
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid $line;
+  font-size: 0.875rem;
+
+  ol {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li + li::before {
+    content: '/';
+    margin: 0 0.5rem;
+    color: $line;
+  }
+
+  a {
+    color: $text;
+    text-decoration: none;
+
+    &:hover {
+      color: $rust;
+    }
+  }
+
+  [aria-current] {
+    color: $rust;
+  }
+}
