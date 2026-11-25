@@ -96,14 +96,3 @@
     }
   }
 }
-
-@media (max-width: 600px) {
-  .cart__item {
-    grid-template-columns: 4rem 1fr auto;
-
-    .cart__subtotal {
-      grid-column: 2;
-      text-align: left;
-    }
-  }
-}

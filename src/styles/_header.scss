@@ -61,7 +61,12 @@
   li:focus-within > ul {
     display: block;
   }
+
+  &__toggle {
+    display: none;
+  }
 }
+
 
 
 

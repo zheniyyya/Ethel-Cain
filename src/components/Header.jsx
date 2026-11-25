@@ -6,7 +6,12 @@ const slides = ['/images/hero-1.jpg', '/images/hero-2.jpg', '/images/hero-3.jpg'
 
 function Header() {
   const [current, setCurrent] = useState(0);
+  const [menuOpen, setMenuOpen] = useState(false);
   const { count } = useCart();
+
+  const closeOnLinkClick = (event) => {
+    if (event.target.closest('a')) setMenuOpen(false);
+  };
 
   useEffect(() => {
     const id = setInterval(() => setCurrent((i) => (i + 1) % slides.length), 10000);
@@ -15,8 +20,18 @@ function Header() {
 
   return (
     <header className="header">
-      <nav className="menu">
-        <ul>
+      <nav className={`menu${menuOpen ? ' is-open' : ''}`} aria-label="Main">
+        <button
+          type="button"
+          className="menu__toggle"
+          aria-expanded={menuOpen}
+          aria-controls="main-menu"
+          onClick={() => setMenuOpen((open) => !open)}
+        >
+          <span aria-hidden="true">{menuOpen ? '✕' : '☰'}</span>
+          Menu
+        </button>
+        <ul id="main-menu" onClick={closeOnLinkClick}>
           <li><NavLink to="/" end>Home</NavLink></li>
           <li>
             <NavLink to="/about" end>About Ethel Cain</NavLink>
