@@ -132,4 +132,20 @@
       text-align: left;
     }
   }
+
+  .gallery__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery__item {
+    img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1;
+    }
+
+    figcaption {
+      max-width: none;
+    }
+  }
 }

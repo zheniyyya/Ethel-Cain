@@ -38,6 +38,7 @@ function Header() {
             <ul>
               <li><NavLink to="/about/biography">Biography</NavLink></li>
               <li><NavLink to="/about/discography">Discography</NavLink></li>
+              <li><NavLink to="/about/gallery">Gallery</NavLink></li>
             </ul>
           </li>
           <li><NavLink to="/news">News</NavLink></li>

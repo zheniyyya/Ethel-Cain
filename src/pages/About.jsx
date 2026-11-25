@@ -14,6 +14,12 @@ const links = [
     title: 'Discography',
     text: "Every EP and album, from Carpet Bed to Willoughby Tucker, I'll Always Love You.",
   },
+  {
+    to: '/about/gallery',
+    image: '/images/gallery/white-dress-prairie.jpg',
+    title: 'Gallery',
+    text: 'White churches, empty fields and faded summer light.',
+  },
 ];
 
 function About() {

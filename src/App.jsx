@@ -6,6 +6,7 @@ import Biography from './pages/Biography.jsx';
 import Cart from './pages/Cart.jsx';
 import Contacts from './pages/Contacts.jsx';
 import Discography from './pages/Discography.jsx';
+import Gallery from './pages/Gallery.jsx';
 import Home from './pages/Home.jsx';
 import Merch from './pages/Merch.jsx';
 import News from './pages/News.jsx';
@@ -23,6 +24,7 @@ const pages = {
   '/about': <About />,
   '/about/biography': <Biography />,
   '/about/discography': <Discography />,
+  '/about/gallery': <Gallery />,
   '/news': <News />,
   '/tour': <Tour />,
   '/shop': <ShopHome />,

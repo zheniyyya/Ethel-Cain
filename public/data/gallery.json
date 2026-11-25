@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "src": "/images/gallery/bedroom-flag.jpeg",
+    "caption": "A bedroom with wood panelling and an old American flag"
+  },
+  {
+    "id": 2,
+    "src": "/images/gallery/white-church.jpg",
+    "caption": "A white wooden church in an empty field"
+  },
+  {
+    "id": 3,
+    "src": "/images/gallery/stained-glass-window.jpg",
+    "caption": "A woman in a white dress in front of a stained glass window"
+  },
+  {
+    "id": 4,
+    "src": "/images/gallery/wind-in-the-field.jpg",
+    "caption": "Wind in the hair, a dry field behind"
+  },
+  {
+    "id": 5,
+    "src": "/images/gallery/church-pews.jpg",
+    "caption": "Wooden pews in a small country church"
+  },
+  {
+    "id": 6,
+    "src": "/images/gallery/video-games.jpg",
+    "caption": "A white dress on the carpet in front of an old TV"
+  },
+  {
+    "id": 7,
+    "src": "/images/gallery/white-dress-prairie.jpg",
+    "caption": "A white dress on the open prairie"
+  },
+  {
+    "id": 8,
+    "src": "/images/gallery/cross-on-the-wall.jpg",
+    "caption": "A wooden cross on a pale wall"
+  }
+]

@@ -3,6 +3,7 @@ export const routes = [
   { path: '/about', title: 'About Ethel Cain' },
   { path: '/about/biography', title: 'Biography' },
   { path: '/about/discography', title: 'Discography' },
+  { path: '/about/gallery', title: 'Gallery' },
   { path: '/news', title: 'News' },
   { path: '/tour', title: 'Tour' },
   { path: '/shop', title: 'Shop' },
