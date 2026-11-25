@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useFetch } from '../hooks/useFetch.js';
 import { formatDate } from '../utils/formatDate.js';
-
-const today = new Date().toISOString().slice(0, 10);
+import { today } from '../utils/today.js';
 
 function Home() {
   const { data: albums } = useFetch('/data/albums.json');

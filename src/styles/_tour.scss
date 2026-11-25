@@ -12,8 +12,9 @@
 
   &__item {
     display: grid;
-    grid-template-columns: 12rem 1fr;
+    grid-template-columns: 12rem 1fr auto;
     gap: 1rem;
+    align-items: center;
     padding: 1rem 0;
     border-top: 1px solid $line;
 
@@ -37,11 +38,56 @@
   &__venue {
     margin: 0.25rem 0 0;
   }
+
+  &__demo {
+    margin-left: 0.75rem;
+    padding: 0.15rem 0.5rem;
+    border: 1px solid $line;
+    font-family: system-ui, sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+
+  &__tickets {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.75rem;
+  }
+
+  &__price {
+    font-family: ui-monospace, Consolas, monospace;
+    font-size: 1.1rem;
+  }
+
+  &__left {
+    color: $rust;
+    font-size: 0.875rem;
+  }
+
+  &__status {
+    color: $line;
+    font-size: 0.875rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    &--sold {
+      color: $rust;
+    }
+  }
 }
 
 @media (max-width: 600px) {
   .tour__item {
     grid-template-columns: 1fr;
     gap: 0.25rem;
+  }
+
+  .tour__tickets {
+    justify-content: flex-start;
+    margin-top: 0.5rem;
   }
 }
