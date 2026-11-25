@@ -9,4 +9,5 @@ export const routes = [
   { path: '/shop/albums', title: 'Albums' },
   { path: '/shop/merch', title: 'Merch' },
   { path: '/contacts', title: 'Contacts' },
+  { path: '/cart', title: 'Cart' },
 ];

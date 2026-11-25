@@ -1,10 +1,12 @@
 import { NavLink } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import { useCart } from '../context/cart.js';
 
 const slides = ['/images/hero-1.jpg', '/images/hero-2.jpg', '/images/hero-3.jpg'];
 
 function Header() {
   const [current, setCurrent] = useState(0);
+  const { count } = useCart();
 
   useEffect(() => {
     const id = setInterval(() => setCurrent((i) => (i + 1) % slides.length), 10000);
@@ -33,6 +35,7 @@ function Header() {
             </ul>
           </li>
           <li><NavLink to="/contacts">Contacts</NavLink></li>
+          <li><NavLink to="/cart">Cart{count > 0 && ` (${count})`}</NavLink></li>
         </ul>
       </nav>
 

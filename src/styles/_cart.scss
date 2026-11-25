@@ -1,0 +1,109 @@
+@use 'variables' as *;
+
+.cart {
+  max-width: 56rem;
+  margin: 0 auto;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: 5rem 1fr auto 6rem auto;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem 0;
+    border-top: 1px solid $line;
+
+    img {
+      width: 5rem;
+      aspect-ratio: 1;
+      object-fit: cover;
+      background: $line;
+    }
+
+    h2,
+    p {
+      margin: 0;
+    }
+
+    h2 {
+      font-family: 'Texturina', Georgia, serif;
+      font-size: 1.2rem;
+    }
+  }
+
+  &__details p {
+    color: $rust;
+    font-size: 0.875rem;
+  }
+
+  &__quantity {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    button {
+      width: 2.25rem;
+      height: 2.25rem;
+      border: 1px solid $rust;
+      background: transparent;
+      color: $rust;
+      font-size: 1.25rem;
+      cursor: pointer;
+
+      &:hover {
+        background: $rust;
+        color: $bg;
+      }
+    }
+  }
+
+  &__subtotal {
+    font-family: ui-monospace, Consolas, monospace;
+    text-align: right;
+  }
+
+  &__remove {
+    border: 0;
+    background: transparent;
+    color: $rust;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  &__summary {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid $line;
+  }
+
+  &__total {
+    margin: 0;
+    font-size: 1.25rem;
+
+    strong {
+      margin-left: 0.5rem;
+      color: $rust;
+      font-family: ui-monospace, Consolas, monospace;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .cart__item {
+    grid-template-columns: 4rem 1fr auto;
+
+    .cart__subtotal {
+      grid-column: 2;
+      text-align: left;
+    }
+  }
+}

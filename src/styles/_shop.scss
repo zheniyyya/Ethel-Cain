@@ -1,0 +1,68 @@
+@use 'variables' as *;
+
+.shop {
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &__cover {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    background: $line;
+  }
+
+  &__title {
+    margin: 0.75rem 0 0.25rem;
+    font-family: 'Texturina', Georgia, serif;
+    font-size: 1.2rem;
+  }
+
+  &__info {
+    margin: 0 0 1rem;
+    color: $rust;
+    font-size: 0.875rem;
+  }
+
+  &__formats {
+    display: flex;
+    margin-top: auto;
+
+    button {
+      padding: 0.5rem 0.9rem;
+      border: 1px solid $rust;
+      background: transparent;
+      color: $rust;
+      cursor: pointer;
+
+      & + button {
+        border-left: 0;
+      }
+
+      &[aria-pressed='true'] {
+        background: $rust;
+        color: $bg;
+      }
+    }
+  }
+
+  &__price {
+    margin: 0.75rem 0;
+    font-family: ui-monospace, Consolas, monospace;
+    font-size: 1.25rem;
+  }
+}

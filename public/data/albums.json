@@ -4,41 +4,47 @@
     "title": "Carpet Bed",
     "year": 2019,
     "type": "EP",
-    "cover": "/images/albums/carpet-bed.jpg"
+    "cover": "/images/albums/carpet-bed.jpg",
+    "prices": { "Vinyl": 25, "CD": 10, "Digital": 5 }
   },
   {
     "id": 2,
     "title": "Golden Age",
     "year": 2019,
     "type": "EP",
-    "cover": "/images/albums/golden-age.jpg"
+    "cover": "/images/albums/golden-age.jpg",
+    "prices": { "Vinyl": 25, "CD": 10, "Digital": 5 }
   },
   {
     "id": 3,
     "title": "Inbred",
     "year": 2021,
     "type": "EP",
-    "cover": "/images/albums/inbred.jpg"
+    "cover": "/images/albums/inbred.jpg",
+    "prices": { "Vinyl": 25, "CD": 10, "Digital": 5 }
   },
   {
     "id": 4,
     "title": "Preacher's Daughter",
     "year": 2022,
     "type": "Album",
-    "cover": "/images/albums/preachers-daughter.webp"
+    "cover": "/images/albums/preachers-daughter.webp",
+    "prices": { "Vinyl": 35, "CD": 15, "Digital": 10 }
   },
   {
     "id": 5,
     "title": "Perverts",
     "year": 2025,
     "type": "EP",
-    "cover": "/images/albums/perverts.png"
+    "cover": "/images/albums/perverts.png",
+    "prices": { "Vinyl": 30, "CD": 12, "Digital": 8 }
   },
   {
     "id": 6,
     "title": "Willoughby Tucker, I'll Always Love You",
     "year": 2025,
     "type": "Album",
-    "cover": "/images/albums/willoughby-tucker.jpg"
+    "cover": "/images/albums/willoughby-tucker.jpg",
+    "prices": { "Vinyl": 35, "CD": 15, "Digital": 10 }
   }
 ]

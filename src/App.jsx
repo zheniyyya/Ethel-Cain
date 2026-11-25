@@ -3,9 +3,11 @@ import Breadcrumbs from './components/Breadcrumbs.jsx';
 import Header from './components/Header.jsx';
 import About from './pages/About.jsx';
 import Biography from './pages/Biography.jsx';
+import Cart from './pages/Cart.jsx';
 import Discography from './pages/Discography.jsx';
 import Home from './pages/Home.jsx';
 import News from './pages/News.jsx';
+import Shop from './pages/Shop.jsx';
 import Tour from './pages/Tour.jsx';
 import { routes } from './routes.js';
 
@@ -20,6 +22,9 @@ const pages = {
   '/about/discography': <Discography />,
   '/news': <News />,
   '/tour': <Tour />,
+  '/shop': <Shop />,
+  '/shop/albums': <Shop />,
+  '/cart': <Cart />,
 };
 
 function App() {
