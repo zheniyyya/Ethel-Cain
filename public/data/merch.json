@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Daughters of Cain T-shirt",
+    "category": "T-shirt",
+    "price": 35,
+    "image": "/images/merch/tshirt-daughters-of-cain.jpeg",
+    "stock": { "S": 0, "M": 2, "L": 1, "XL": 0 }
+  },
+  {
+    "id": 2,
+    "title": "Willoughby Tucker T-shirt",
+    "category": "T-shirt",
+    "price": 35,
+    "image": "/images/merch/tshirt-willoughby-tucker.webp",
+    "stock": { "S": 3, "M": 5, "L": 4, "XL": 2 }
+  },
+  {
+    "id": 3,
+    "title": "Willoughby Tucker Oval T-shirt",
+    "category": "T-shirt",
+    "price": 35,
+    "image": "/images/merch/tshirt-willoughby-tucker-oval.jpg",
+    "stock": { "S": 2, "M": 0, "L": 3, "XL": 1 }
+  },
+  {
+    "id": 4,
+    "title": "I'm Gonna Regret This Forever T-shirt",
+    "category": "T-shirt",
+    "price": 30,
+    "image": "/images/merch/tshirt-regret-forever.jpg",
+    "stock": { "S": 0, "M": 0, "L": 0, "XL": 0 }
+  },
+  {
+    "id": 5,
+    "title": "Preacher's Daughter Metal T-shirt",
+    "category": "T-shirt",
+    "price": 35,
+    "image": "/images/merch/tshirt-preachers-daughter-metal.webp",
+    "stock": { "S": 1, "M": 3, "L": 0, "XL": 2 }
+  },
+  {
+    "id": 6,
+    "title": "Preacher's Daughter T-shirt",
+    "category": "T-shirt",
+    "price": 35,
+    "image": "/images/merch/tshirt-preachers-daughter.webp",
+    "stock": { "S": 4, "M": 4, "L": 2, "XL": 0 }
+  },
+  {
+    "id": 7,
+    "title": "Preacher's Daughter Poster",
+    "category": "Poster",
+    "price": 20,
+    "image": "/images/merch/poster-preachers-daughter.webp",
+    "stock": { "18 × 24 in": 6 }
+  },
+  {
+    "id": 8,
+    "title": "Willoughby Tucker Forever 2026 Tour Poster",
+    "category": "Poster",
+    "price": 25,
+    "image": "/images/merch/poster-willoughby-tucker-tour-2026.webp",
+    "stock": { "18 × 24 in": 1 }
+  },
+  {
+    "id": 9,
+    "title": "Ethel Cain Tote Bag",
+    "category": "Tote bag",
+    "price": 25,
+    "image": "/images/merch/tote-bag.jpg",
+    "stock": { "One size": 8 }
+  }
+]

@@ -21,6 +21,13 @@
     color: $rust;
   }
 
+  &:disabled {
+    border-color: $line;
+    background: $line;
+    color: $text;
+    cursor: not-allowed;
+  }
+
   &--outline {
     background: transparent;
     color: $rust;

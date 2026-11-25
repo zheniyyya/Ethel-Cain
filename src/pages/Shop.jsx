@@ -46,7 +46,7 @@ function AlbumCard({ album }) {
         {album.type} · {album.year}
       </p>
 
-      <div className="product__formats" role="group" aria-label="Format">
+      <div className="product__options" role="group" aria-label="Format">
         {formats.map((name) => (
           <button
             key={name}
@@ -60,7 +60,19 @@ function AlbumCard({ album }) {
       </div>
 
       <p className="product__price">{formatPrice(album.prices[format])}</p>
-      <button type="button" className="button" onClick={() => addItem(album, format)}>
+      <button
+        type="button"
+        className="button"
+        onClick={() =>
+          addItem({
+            key: `album-${album.id}-${format}`,
+            title: album.title,
+            image: album.cover,
+            variant: format,
+            price: album.prices[format],
+          })
+        }
+      >
         Add to cart
       </button>
     </li>
