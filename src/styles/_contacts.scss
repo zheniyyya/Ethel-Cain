@@ -1,0 +1,69 @@
+@use 'variables' as *;
+
+.contacts {
+  max-width: 72rem;
+  margin: 0 auto;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2.5rem;
+    align-items: start;
+  }
+
+  &__lead {
+    margin: 0 0 2rem;
+    padding-left: 1.25rem;
+    border-left: 2px solid $rust;
+    font-size: 1.2rem;
+    line-height: 1.7;
+  }
+
+  &__list {
+    margin: 0;
+
+    dt {
+      margin-top: 1.25rem;
+      color: $rust;
+      font-size: 0.875rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    dd {
+      margin: 0.25rem 0 0;
+      font-family: 'Texturina', Georgia, serif;
+      font-size: 1.25rem;
+      overflow-wrap: anywhere;
+    }
+
+    a {
+      color: $text;
+
+      &:hover {
+        color: $rust;
+      }
+    }
+  }
+
+  &__map {
+    margin: 0;
+
+    iframe {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      border: 1px solid $line;
+      filter: sepia(0.35) saturate(0.7) contrast(0.95);
+    }
+
+    figcaption {
+      margin-top: 0.5rem;
+      font-size: 0.875rem;
+
+      a {
+        color: $rust;
+      }
+    }
+  }
+}

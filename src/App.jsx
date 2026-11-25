@@ -4,6 +4,7 @@ import Header from './components/Header.jsx';
 import About from './pages/About.jsx';
 import Biography from './pages/Biography.jsx';
 import Cart from './pages/Cart.jsx';
+import Contacts from './pages/Contacts.jsx';
 import Discography from './pages/Discography.jsx';
 import Home from './pages/Home.jsx';
 import Merch from './pages/Merch.jsx';
@@ -28,6 +29,7 @@ const pages = {
   '/shop/albums': <Shop />,
   '/shop/merch': <Merch />,
   '/cart': <Cart />,
+  '/contacts': <Contacts />,
 };
 
 function App() {
