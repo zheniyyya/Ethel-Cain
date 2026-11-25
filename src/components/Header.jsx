@@ -1,3 +1,4 @@
+import SafeImage from './SafeImage.jsx';
 import { NavLink } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { useCart } from '../context/cart.js';
@@ -57,7 +58,7 @@ function Header() {
 
       <div className="slider">
         {slides.map((src, i) => (
-          <img key={src} src={src} alt="Ethel Cain" className={i === current ? 'active' : ''} />
+          <SafeImage key={src} src={src} alt="Ethel Cain" className={i === current ? 'active' : ''} />
         ))}
       </div>
     </header>

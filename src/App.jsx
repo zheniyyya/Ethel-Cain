@@ -10,14 +10,10 @@ import Gallery from './pages/Gallery.jsx';
 import Home from './pages/Home.jsx';
 import Merch from './pages/Merch.jsx';
 import News from './pages/News.jsx';
+import NotFound from './pages/NotFound.jsx';
 import Shop from './pages/Shop.jsx';
 import ShopHome from './pages/ShopHome.jsx';
 import Tour from './pages/Tour.jsx';
-import { routes } from './routes.js';
-
-function Page({ title }) {
-  return <h1>{title}</h1>;
-}
 
 const pages = {
   '/': <Home />,
@@ -42,9 +38,10 @@ function App() {
         <Breadcrumbs />
         <div className="content">
           <Routes>
-            {routes.map(({ path, title }) => (
-              <Route key={path} path={path} element={pages[path] ?? <Page title={title} />} />
+            {Object.entries(pages).map(([path, element]) => (
+              <Route key={path} path={path} element={element} />
             ))}
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
       </main>

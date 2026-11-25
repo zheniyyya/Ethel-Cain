@@ -1,3 +1,4 @@
+import SafeImage from './SafeImage.jsx';
 import { Link } from 'react-router-dom';
 
 function SectionOverview({ title, lead, facts, links }) {
@@ -21,7 +22,7 @@ function SectionOverview({ title, lead, facts, links }) {
         {links.map((link) => (
           <li key={link.to}>
             <Link to={link.to} className="overview__card">
-              <img src={link.image} alt="" loading="lazy" />
+              <SafeImage src={link.image} alt="" loading="lazy" />
               <div className="overview__card-body">
                 <h2>{link.title}</h2>
                 <p>{link.text}</p>

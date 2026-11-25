@@ -1,3 +1,4 @@
+import SafeImage from '../components/SafeImage.jsx';
 import { useState } from 'react';
 import Pagination from '../components/Pagination.jsx';
 import SearchField from '../components/SearchField.jsx';
@@ -40,7 +41,7 @@ function AlbumCard({ album }) {
 
   return (
     <li className="product">
-      <img className="product__cover" src={album.cover} alt={album.title} loading="lazy" />
+      <SafeImage className="product__cover" src={album.cover} alt={album.title} loading="lazy" />
       <h2 className="product__title">{album.title}</h2>
       <p className="product__info">
         {album.type} · {album.year}

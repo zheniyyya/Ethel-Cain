@@ -1,3 +1,4 @@
+import SafeImage from '../components/SafeImage.jsx';
 import Status from '../components/Status.jsx';
 import { useFetch } from '../hooks/useFetch.js';
 
@@ -12,7 +13,7 @@ function Discography() {
       <ul className="albums">
         {albums.map((album) => (
           <li key={album.id} className="album">
-            <img className="album__cover" src={album.cover} alt={album.title} loading="lazy" />
+            <SafeImage className="album__cover" src={album.cover} alt={album.title} loading="lazy" />
             <h2 className="album__title">{album.title}</h2>
             <p className="album__info">
               {album.type} · {album.year}

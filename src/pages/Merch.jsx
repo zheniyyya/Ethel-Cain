@@ -1,3 +1,4 @@
+import SafeImage from '../components/SafeImage.jsx';
 import { useState } from 'react';
 import Pagination from '../components/Pagination.jsx';
 import SearchField from '../components/SearchField.jsx';
@@ -56,7 +57,7 @@ function MerchCard({ product }) {
   return (
     <li className={`product${soldOut ? ' product--sold-out' : ''}`}>
       <div className="product__media">
-        <img className="product__cover" src={product.image} alt={product.title} loading="lazy" />
+        <SafeImage className="product__cover" src={product.image} alt={product.title} loading="lazy" />
         {soldOut && <span className="product__badge">Sold out</span>}
       </div>
       <h2 className="product__title">{product.title}</h2>

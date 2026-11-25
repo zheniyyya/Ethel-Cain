@@ -1,3 +1,4 @@
+import SafeImage from '../components/SafeImage.jsx';
 import Status from '../components/Status.jsx';
 import { useFetch } from '../hooks/useFetch.js';
 
@@ -13,7 +14,7 @@ function Gallery() {
         {photos.map((photo) => (
           <li key={photo.id}>
             <figure className="gallery__item">
-              <img src={photo.src} alt={photo.caption} width="300" height="300" loading="lazy" />
+              <SafeImage src={photo.src} alt={photo.caption} width="300" height="300" loading="lazy" />
               <figcaption>{photo.caption}</figcaption>
             </figure>
           </li>

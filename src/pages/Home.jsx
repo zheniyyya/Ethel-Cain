@@ -1,3 +1,4 @@
+import SafeImage from '../components/SafeImage.jsx';
 import { Link } from 'react-router-dom';
 import { useFetch } from '../hooks/useFetch.js';
 import { formatDate } from '../utils/formatDate.js';
@@ -36,7 +37,7 @@ function Home() {
           <section>
             <h2 className="home__heading">Latest release</h2>
             <Link to="/about/discography" className="home__release">
-              <img src={latestAlbum.cover} alt={latestAlbum.title} loading="lazy" />
+              <SafeImage src={latestAlbum.cover} alt={latestAlbum.title} loading="lazy" />
               <div>
                 <h3>{latestAlbum.title}</h3>
                 <p>

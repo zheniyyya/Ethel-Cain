@@ -1,3 +1,4 @@
+import SafeImage from '../components/SafeImage.jsx';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useCart } from '../context/cart.js';
@@ -43,7 +44,7 @@ function Cart() {
       <ul className="cart__list">
         {items.map((item) => (
           <li key={item.key} className="cart__item">
-            <img src={item.image} alt="" />
+            <SafeImage src={item.image} alt="" />
             <div className="cart__details">
               <h2>{item.title}</h2>
               <p>
