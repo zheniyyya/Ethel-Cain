@@ -15,7 +15,14 @@ export function useFetch(url) {
         if (!ignore) setState({ data, loading: false, error: null });
       })
       .catch((error) => {
-        if (!ignore) setState({ data: null, loading: false, error: error.message });
+        console.error(error);
+        if (!ignore) {
+          setState({
+            data: null,
+            loading: false,
+            error: 'Could not load the data. Please try again later.',
+          });
+        }
       });
 
     return () => {

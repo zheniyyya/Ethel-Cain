@@ -1,10 +1,10 @@
+import Status from '../components/Status.jsx';
 import { useFetch } from '../hooks/useFetch.js';
 
 function Discography() {
   const { data: albums, loading, error } = useFetch('/data/albums.json');
 
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>{error}</p>;
+  if (loading || error) return <Status loading={loading} error={error} />;
 
   return (
     <>

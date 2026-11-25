@@ -1,0 +1,13 @@
+@use 'variables' as *;
+
+.status {
+  margin: 2rem 0;
+  padding: 1rem 1.25rem;
+  border-left: 2px solid $line;
+  font-size: 1.125rem;
+
+  &--error {
+    border-left-color: $rust;
+    color: $rust;
+  }
+}

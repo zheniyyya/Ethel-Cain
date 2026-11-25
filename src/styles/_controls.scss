@@ -1,0 +1,71 @@
+@use 'variables' as *;
+
+$icon-close: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 5l14 14M19 5L5 19' stroke='black' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E");
+$icon-arrow: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M4 8l8 8 8-8' fill='none' stroke='%237a2e22' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: $rust;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  input,
+  select {
+    min-height: 3.25rem;
+    color: $text;
+    font: inherit;
+    font-size: 1.125rem;
+    letter-spacing: normal;
+    text-transform: none;
+    outline: none;
+  }
+
+  input {
+    min-width: 22rem;
+    padding: 0.75rem 0;
+    border: 0;
+    border-bottom: 2px solid $rust;
+    background: transparent;
+
+    &:focus {
+      box-shadow: 0 2px 0 $rust;
+    }
+
+    &::-webkit-search-cancel-button {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 1.1rem;
+      height: 1.1rem;
+      cursor: pointer;
+      background: $rust;
+      -webkit-mask: $icon-close center / contain no-repeat;
+      mask: $icon-close center / contain no-repeat;
+    }
+  }
+
+  select {
+    min-width: 16rem;
+    padding: 0.75rem 3rem 0.75rem 1rem;
+    border: 2px solid $rust;
+    border-radius: 0;
+    background: $bg $icon-arrow no-repeat right 1rem center / 1rem;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+
+    &:focus-visible {
+      outline: 2px solid $rust;
+      outline-offset: 2px;
+    }
+  }
+}

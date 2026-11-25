@@ -1,11 +1,11 @@
+import Status from '../components/Status.jsx';
 import { useFetch } from '../hooks/useFetch.js';
 import { formatDate } from '../utils/formatDate.js';
 
 function News() {
   const { data, loading, error } = useFetch('/data/news.json');
 
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>{error}</p>;
+  if (loading || error) return <Status loading={loading} error={error} />;
 
   const news = [...data].sort((a, b) => b.date.localeCompare(a.date));
 
