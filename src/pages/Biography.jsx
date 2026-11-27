@@ -1,3 +1,5 @@
+import ShareButtons from '../components/ShareButtons.jsx';
+
 function Biography() {
   return (
     <article className="article">
@@ -94,6 +96,8 @@ function Biography() {
         about faith and doubt, love and violence, beauty and decay. It rewards patient listening,
         and it stays with you long after it ends.
       </p>
+
+      <ShareButtons text="Ethel Cain: the story so far" />
     </article>
   );
 }

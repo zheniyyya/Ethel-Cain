@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import SafeImage from '../components/SafeImage.jsx';
+import ShareButtons from '../components/ShareButtons.jsx';
 import Status from '../components/Status.jsx';
 import { useFetch } from '../hooks/useFetch.js';
 
@@ -29,6 +30,8 @@ function Discography() {
           </li>
         ))}
       </ul>
+
+      <ShareButtons text="Ethel Cain discography" />
     </>
   );
 }

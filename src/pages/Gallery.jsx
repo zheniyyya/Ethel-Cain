@@ -1,4 +1,5 @@
 import SafeImage from '../components/SafeImage.jsx';
+import ShareButtons from '../components/ShareButtons.jsx';
 import Status from '../components/Status.jsx';
 import { useFetch } from '../hooks/useFetch.js';
 
@@ -20,6 +21,8 @@ function Gallery() {
           </li>
         ))}
       </ul>
+
+      <ShareButtons text="Ethel Cain gallery" />
     </section>
   );
 }

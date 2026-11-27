@@ -1,3 +1,4 @@
+import ShareButtons from '../components/ShareButtons.jsx';
 import Status from '../components/Status.jsx';
 import { useFetch } from '../hooks/useFetch.js';
 import { formatDate } from '../utils/formatDate.js';
@@ -24,6 +25,8 @@ function News() {
           </li>
         ))}
       </ul>
+
+      <ShareButtons text="Latest Ethel Cain news" />
     </section>
   );
 }

@@ -1,6 +1,7 @@
 import Pagination from '../components/Pagination.jsx';
 import SearchField from '../components/SearchField.jsx';
 import SelectField from '../components/SelectField.jsx';
+import ShareButtons from '../components/ShareButtons.jsx';
 import Status from '../components/Status.jsx';
 import { useCart } from '../context/cart.js';
 import { useFetch } from '../hooks/useFetch.js';
@@ -143,6 +144,8 @@ function Tour() {
         ))}
       </ul>
       <Pagination page={list.page} totalPages={list.totalPages} onChange={list.changePage} />
+
+      <ShareButtons text="Ethel Cain tour dates" />
     </section>
   );
 }
