@@ -1,6 +1,8 @@
 import { Route, Routes } from 'react-router-dom';
 import Breadcrumbs from './components/Breadcrumbs.jsx';
 import Header from './components/Header.jsx';
+import Sidebar from './components/Sidebar.jsx';
+import { sidebarMenu } from './navigation.js';
 import About from './pages/About.jsx';
 import Biography from './pages/Biography.jsx';
 import Cart from './pages/Cart.jsx';
@@ -34,17 +36,20 @@ function App() {
   return (
     <div className="app">
       <Header />
-      <main className="main">
-        <Breadcrumbs />
-        <div className="content">
-          <Routes>
-            {Object.entries(pages).map(([path, element]) => (
-              <Route key={path} path={path} element={element} />
-            ))}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </div>
-      </main>
+      <div className="layout">
+        <Sidebar items={sidebarMenu} />
+        <main className="main">
+          <Breadcrumbs />
+          <div className="content">
+            <Routes>
+              {Object.entries(pages).map(([path, element]) => (
+                <Route key={path} path={path} element={element} />
+              ))}
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </div>
+        </main>
+      </div>
     </div>
   );
 }

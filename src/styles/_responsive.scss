@@ -1,6 +1,10 @@
 @use 'variables' as *;
 
 @media (max-width: $breakpoint-menu) {
+  .sidebar {
+    display: none;
+  }
+
   .menu {
     &__toggle {
       display: flex;
